@@ -1,0 +1,27 @@
+{
+  "name": "mattermost-etl",
+  "version": "1.0.0",
+  "description": "An ETL framework to migrate data to Mattermost",
+  "author": "Michael DeBonis",
+  "license": "MIT",
+  "homepage": "https://github.com/Brightscout/mattermost-etl#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brightscout/mattermost-etl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Brightscout/mattermost-etl/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/** --recursive"
+  },
+  "dependencies": {
+    "empujar": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.4"
+  }
+}
