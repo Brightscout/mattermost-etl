@@ -12,10 +12,6 @@
   "bugs": {
     "url": "https://github.com/Brightscout/mattermost-etl/issues"
   },
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha src/** --recursive"
-  },
   "dependencies": {
     "empujar": "^0.1.0"
   },
@@ -23,5 +19,9 @@
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
     "sinon": "^2.3.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/** --recursive"
   }
 }
