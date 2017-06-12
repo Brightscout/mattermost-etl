@@ -24,7 +24,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha src --recursive",
-    "coverage": "istanbul cover _mocha src -- --recursive"
+    "test": "mocha lib --recursive",
+    "coverage": "istanbul cover _mocha lib -- --recursive"
   }
 }
