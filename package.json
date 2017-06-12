@@ -25,6 +25,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha lib --recursive",
-    "coverage": "istanbul cover _mocha lib -- --recursive"
+    "test-watch": "npm run test -- --watch",
+    "test-coverage": "istanbul cover _mocha lib -- --recursive"
   }
 }
