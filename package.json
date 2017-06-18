@@ -13,7 +13,8 @@
     "url": "https://github.com/Brightscout/mattermost-etl/issues"
   },
   "dependencies": {
-    "empujar": "^0.1.0"
+    "joi": "^10.6.0",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "chai": "^4.0.2",
