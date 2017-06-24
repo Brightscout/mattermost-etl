@@ -14,7 +14,10 @@
   },
   "dependencies": {
     "joi": "^10.6.0",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "mssql": "^4.0.4",
+    "slug": "^0.9.1",
+    "xmldoc": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^4.0.2",
@@ -27,6 +30,7 @@
   "scripts": {
     "test": "mocha lib --recursive",
     "test-watch": "npm run test -- --watch",
-    "test-coverage": "istanbul cover _mocha lib -- --recursive"
+    "test-coverage": "istanbul cover _mocha lib -- --recursive",
+    "start": "node index.js"
   }
 }
