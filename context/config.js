@@ -12,6 +12,10 @@ module.exports = {
       description: 'Homeland Security Information Network',
       type: 'I',
       allow_open_invite: false
+    },
+    user: {
+      auth_service: 'ldap',
+      auth_data: 'username-ldap-field'
     }
   }
 }
