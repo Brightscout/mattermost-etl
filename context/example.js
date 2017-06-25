@@ -1,17 +1,17 @@
 module.exports = {
-  config: {
-    source: {
-      uri: 'mssql://username:password@server:1433/jabber?encrypt=true'
-    },
-    target: {
-      filename: 'data.json'
-    }
+  source: {
+    uri: 'mssql://dbscout:dbscout17@hsin.csrzizhdewvn.us-east-1.rds.amazonaws.com:1433/jabber?encrypt=true'
   },
-  team: {
-    name: 'some-name',
-    display_name: 'Some Name',
-    description: 'Some Description',
-    type: 'I',
-    allow_open_invite: false
+  target: {
+    filename: 'data.json'
+  },
+  define: {
+    team: {
+      name: 'hsin',
+      display_name: 'HSIN',
+      description: 'Homeland Security Information Network',
+      type: 'I',
+      allow_open_invite: false
+    }
   }
 }
