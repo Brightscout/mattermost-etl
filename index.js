@@ -7,6 +7,7 @@ const {
   team,
   channels,
   users,
+  posts,
   end
 } = modules
 
@@ -15,6 +16,7 @@ start(context)
   .then(team)
   .then(channels)
   .then(users)
+  .then(posts)
   .then(end)
   .catch(function(err) {
     console.error(err)
