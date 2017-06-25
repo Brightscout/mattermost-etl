@@ -30,7 +30,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint *.js context lib --ext .js",
-    "test": "mocha lib --recursive",
+    "test": "npm run lint && mocha lib --recursive",
     "test-watch": "npm run test -- --watch",
     "test-coverage": "istanbul cover _mocha lib -- --recursive",
     "start": "node index.js"
