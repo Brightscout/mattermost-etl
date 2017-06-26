@@ -27,7 +27,7 @@ node_modules/
 .env
 
 # application config file
-# context/index.js
+# context/config.js
 
 # generated data json file
 data.json
