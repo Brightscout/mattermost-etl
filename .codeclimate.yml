@@ -1,10 +1,17 @@
-# engines:
-#   eslint:
-#     enabled: true
-#   duplication:
-#     enabled: true
-#     config:
-#       languages:
-#       - javascript
-#   fixme:
-#     enabled: true
+engines:
+  eslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript:
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - context/**
+  - lib/**
+  - "**.js"
+exclude_paths:
+- "**/test/**/*"
