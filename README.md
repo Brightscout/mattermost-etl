@@ -1,8 +1,8 @@
 # Mattermost ETL [![CircleCI](https://circleci.com/gh/Brightscout/mattermost-etl.svg?style=shield&circle-token=3e834193f471812ea72217332aa0f5ff36825afe)](https://circleci.com/gh/Brightscout/mattermost-etl) [![Code Climate](https://codeclimate.com/github/Brightscout/mattermost-etl/badges/gpa.svg)](https://codeclimate.com/github/Brightscout/mattermost-etl) [![Test Coverage](https://codeclimate.com/github/Brightscout/mattermost-etl/badges/coverage.svg)](https://codeclimate.com/github/Brightscout/mattermost-etl/coverage)
 
-An ETL framework to migrate data from Jabber to Mattermost. Eventually, we'll enhance this project to support migration from other messaging sources.  
+An ETL framework to migrate data from Jabber to Mattermost. This utility exports data from an source Jabber database and generates a [Mattermost Bulk Loading](https://docs.mattermost.com/deployment/bulk-loading.html) import file. Eventually, we'll enhance this project to support migration from other messaging sources.  
 
-This node project exports data from an existing Jabber database and generates a [Mattermost Bulk Loading](https://docs.mattermost.com/deployment/bulk-loading.html) import file.
+
 
 ## Install
 
