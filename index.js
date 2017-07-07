@@ -9,6 +9,7 @@ const {
   users,
   posts,
   directChannels,
+  directPosts,
   end
 } = modules
 
@@ -19,6 +20,7 @@ start(context)
   .then(users)
   .then(posts)
   .then(directChannels)
+  .then(directPosts)
   .then(end)
   .catch(function(err) {
     console.error(err)
