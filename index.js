@@ -14,6 +14,26 @@ const {
   end
 } = modules
 
+//
+// Common function log errors and
+// terminate the process
+//
+const abort = function(err) {
+  log.error(err)
+  setTimeout(function() {
+    process.exit(1)
+  }, 3000)
+}
+
+//
+// Ensure we trap uncaught exceptions
+// and properly abort
+//
+process.on('uncaughtException', abort)
+
+//
+// Let's do it
+//
 start(context)
   .then(version)
   .then(team)
@@ -23,7 +43,4 @@ start(context)
   .then(directChannels)
   .then(directPosts)
   .then(end)
-  .catch(function(err) {
-    log.error(err)
-    process.exit(0)
-  })
+  .catch(abort)
