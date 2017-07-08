@@ -1,5 +1,6 @@
 const context = require('./context')
 const modules = require('./lib/modules')
+const log = require('./lib/log')
 
 const {
   start,
@@ -23,6 +24,6 @@ start(context)
   .then(directPosts)
   .then(end)
   .catch(function(err) {
-    console.error(err)
-    process.exit(1)
+    log.error(err)
+    process.exit(0)
   })
