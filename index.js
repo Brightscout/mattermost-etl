@@ -20,6 +20,11 @@ const {
 //
 const abort = function(err) {
   log.error(err)
+  //
+  // We set a timeout here to
+  // allow the log streams to finish
+  // writing.
+  //
   setTimeout(function() {
     process.exit(1)
   }, 3000)
