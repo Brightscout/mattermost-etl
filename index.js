@@ -1,7 +1,5 @@
 const context = require('./context')
-const modules = require('./lib/modules')
 const log = require('./lib/log')
-
 const {
   start,
   version,
@@ -12,7 +10,7 @@ const {
   directChannels,
   directPosts,
   end
-} = modules
+} = require('./lib/modules')
 
 //
 // Common function log errors and
