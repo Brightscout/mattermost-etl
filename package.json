@@ -34,6 +34,6 @@
     "test": "npm run lint && mocha lib --recursive",
     "test-watch": "npm run test -- --watch",
     "test-coverage": "istanbul cover _mocha lib -- --recursive",
-    "start": "node index.js | ./node_modules/.bin/bunyan"
+    "start": "node index.js | bunyan"
   }
 }
