@@ -1,6 +1,6 @@
 module.exports = {
   source: {
-    uri: 'mssql://username:password@server:1433/database?encrypt=true'
+    uri: 'mssql://username:password@server:1433/database?encrypt=true&requestTimeout=30000'
   },
   target: {
     filename: 'data.json'
