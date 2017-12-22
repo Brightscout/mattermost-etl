@@ -2,7 +2,9 @@
 
 An ETL framework to migrate data from Jabber to Mattermost. This utility exports data from a source Jabber database and generates a [Mattermost Bulk Loading](https://docs.mattermost.com/deployment/bulk-loading.html) import file. Eventually, we'll enhance this project to support migrations from other messaging sources.  
 
+## History
 
+This framework was created to [rapidly migrate a large U.S. public sector organization from a Jabber to Mattermost](https://about.mattermost.com/blog/u-s-federal-agency-migrates-from-jabber-to-mattermost-the-open-source-way/). Critical in that migration was the ability for hundreds of users to continue using the Pidgin client, which spawned the creation of the [Pidgin-Mattermost integratino by Eion Robb](https://github.com/EionRobb/purple-mattermost). 
 
 ## Install
 
